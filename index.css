@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, Helvetica;
+    background: #eee;
+    text-align: center;
+}
+
+
+.card{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    line-height: 300px;
+    margin: -150px;
+    background: white;
+    color: #013655;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    animation-name: sample;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(1, 0.4, 1.4,0.1);
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation: sample 3s infinite alternate; */
+}
+@keyframes sample{
+    0% {border-radius: 10%;}
+    25% {border-radius: 20%; background-color: rgb(178, 235, 21); color: black;}
+    50% {border-radius: 30%; background-color: rgb(111, 71, 255); color: white;}
+    75% {border-radius: 50%; background-color: rgb(182, 10, 116); color: yellow;}
+    100% {border-radius: 60%;background-color: rgb(3, 150, 81); color: white;}
+}
